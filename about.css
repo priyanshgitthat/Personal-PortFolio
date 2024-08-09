@@ -1,0 +1,141 @@
+.about {
+height: auto;
+width: auto;
+padding: 4em 5%;
+/* background-color: #c3195d; */
+display: flex;
+align-items: center;
+flex-direction: column;
+margin: 2em;
+border-radius: 20px;
+box-shadow: 0 0 20px white;
+}
+
+.about h1{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    width: 100%;
+    font-size: 3rem;
+    border-bottom: 2px solid #c3195d;
+    font-family: "Exo 2", sans-serif;
+}
+
+.about h1 span{
+    color: #c3195d;
+    font-family: "Exo 2", sans-serif;
+}
+
+.about h2{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #c3195d;
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+    font-family: "Exo 2", sans-serif;
+}
+
+.about img{
+    width: 30vh;
+    max-width: 40%;
+    margin: 3em 0;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+
+.about p{
+    line-height: 2em;
+    font-size: 1.8em;
+    color: white;
+    letter-spacing: 1.5px;
+    font-family: "Play", sans-serif;
+}
+
+.about .btn{
+    display: flex;
+    justify-content: center;
+}
+
+.btn .link{
+    margin: 1em .4em;
+    padding: .5em;
+    background: #c3195d;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 2em;
+    transition: all .2s ease;
+}
+.btn .link:hover{
+    box-shadow: 0 0 25px #f10966;
+    transform: scale(1.2);
+}
+
+
+#ch,.content,#show{
+    display: none;
+}
+
+.content label{
+    text-align: center;
+}
+
+.label{
+    color: white;
+    background-color: #c3195d;
+    margin: 1.2em 0;
+    padding: .3em .9em;
+    border-radius: 20px;
+    font-size: 1.8em;
+    text-align: center;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-family: "Play", sans-serif;
+    transition: all .15s ease;
+    letter-spacing: 1px;
+}
+
+.label:hover{
+    box-shadow: 0 0 10px #c3195d;
+    transform: scale(1.05);
+}
+#ch:checked ~ .content{
+    display: block;
+}
+
+#ch:checked ~ #show{
+    display: block;
+
+}
+
+#ch:checked ~ #hide{
+    display: none;
+
+}
+
+@media screen and (max-width: 738px){
+    .label{
+        font-size:1.4em ;
+
+    }
+    .about h1{
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    
+    .label{
+
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .btn a{
+        font-size: .9em;
+
+    }
+}

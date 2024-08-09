@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+.timeline{
+    width: 100%;    
+    min-height: 100vh;
+    height: auto;
+    padding: 4em 6%;
+    background: black;
+}
+
+.timeline h1{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px ;
+    font-weight: 700;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 1.2em;
+    font-family: "Play", sans-serif;
+}
+
+.timeline h1 span{
+    color: #c3195d;
+    font-family: "Play", sans-serif;
+}
+
+.wrapper{
+    border-left: 5px solid #c3195d;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(50%,1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 6em 0 0 0;
+    padding: 0 8em;
+    position: relative;
+}
+
+.wrapper .box{
+    display: flex;
+    min-height: 30vh;
+    height: auto;
+    align-items: left;
+    flex-direction: column;
+    padding: 2em;
+    background-color: rgb(237 0 95 / 47%);
+    border-radius: 20px;
+    border: 2px solid #c3195d;
+    transition: .18s ease-in;
+    overflow: hidden;
+    transition: .2s ease;
+}
+
+.wrapper .box h2{
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    
+    
+}
+
+.wrapper .box p{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 1px;
+    
+}
+
+.wrapper .box h2,.wrapper .box p{
+    margin: .4em 0;
+}
+
+
+.wrapper .box:hover{
+    box-shadow: 0 0 20px #c3195d;
+    border-color: white;
+}
+
+.wrapper .box::before{
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: #c3195d;
+    border-radius: 50%;
+    left: -15px;
+}
+
+
+@media screen and (max-width: 738px){
+
+    .timeline h1{
+        font-size: 2rem;
+    }
+    .wrapper .box{
+        width: 80vw;
+       padding: 2em;
+    }
+    .wrapper{
+        padding: 0 2em;
+    }
+}
