@@ -107,7 +107,7 @@ header button{
     }
 }
 
-@media screen and (max-width:703px){
+@media screen and (max-width:791px){
     header .menu{
         display: none;
     }
